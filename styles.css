@@ -1,0 +1,19 @@
+.container{
+    top:50%;
+    left: 50%;
+    position: absolute;
+    width: max-content;
+}
+.card{
+    border: 1px green
+
+}
+
+.cart {
+    width: 250px;
+    float: right; 
+    text-align: center;
+    border: 1px solid black;
+    overflow-y:scroll;
+    height: 100%;
+}
