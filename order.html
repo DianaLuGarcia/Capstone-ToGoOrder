@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <link
     rel="stylesheet" href="styles.css" />
     <script type=""text/javascript" src="addToCart.js"></script>
-<title>Page Title</title>
+<title>Order</title>
 </head>
 <body>
-
+<!--Nav Bar-->    
+    <nav>
+        <ol>
+        <li class="crumb"><a href="./home.html">Home</a></li>
+        <li class="crumb"><a href="./order.html">Order</a></li>
+        <li class="crumb"><a href="./cart.html">Cart</a></li>
+        </ol>
+    </div>
+    </nav>
 <!-- title -->
 <div class="title">
-  <h2>Our Menu</h2>
+  <h2>Our To Go Menu</h2>
   <div class="underline"></div>
 </div>
+
 <!-- menu items -->
 <div class="section-center">
 <!-- 1st item -->
      <div class="card" id="item1">
-        <img src="menu.item1.jpeg" class="photo" alt="menu-item">
+        <img src="img/menu.item1.jpeg" class="photo" alt="menu-item">
         <div class="title">item 1</div>
+        <div class="price">$10.99</div>
         <div>
             <label> Quantity: </label>
             <select>
@@ -30,12 +39,13 @@
                 <option>5</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <button onclick = "addToCart(item1)">Add to Cart</button>
     </div>
 <!-- 2nd item -->
     <div class="card" id="item2">
-        <img src="menu.item2.jpeg" class="photo" alt="menu-item">
+        <img src="img/menu.item2.jpeg" class="photo" alt="menu-item">
         <div class="title">item 2</div>
+        <div class="price">$7.99</div>
         <div>
             <label> Quantity: </label>
             <select>
@@ -46,12 +56,13 @@
                 <option>5</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <button onclick = "addToCart(item2)">Add to Cart</button>
     </div>
 <!-- 3rd item -->    
     <div class="card" id="item3">
-        <img src="menu.item3.jpeg" class="photo" alt="menu-item">
+        <img src="img/menu.item3.jpeg" class="photo" alt="menu-item">
         <div class="title">item 3</div>
+        <div class="price">$5.99</div>
         <div>
             <label> Quantity: </label>
             <select>
@@ -62,12 +73,12 @@
                 <option>5</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <button onclick = "addToCart(item3)">Add to Cart</button>
     </div>
 <!-- 4th item -->    
     <div class="card" id="item4">
-        <img src="menu.item4.jpeg" class="photo" alt="menu-item">
-        <div class="title">item 4</div>
+        <img src="img/menu.item4.jpeg" class="photo" alt="menu-item">
+        <div class="title">item 4<p>$10.99</p></div>
         <div>
             <label> Quantity: </label>
             <select>
@@ -78,12 +89,12 @@
                 <option>5</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <button onclick = "addToCart(item4)">Add to Cart</button>
     </div>
 <!-- 5th item -->    
     <div class="card" id="item5">
-        <img src="menu.item5.jpeg" class="photo" alt="menu-item">
-        <div class="title">item 5</div>
+        <img src="img/menu.item5.jpeg" class="photo" alt="menu-item">
+        <div class="title">item 5<p>$6.99</p></div>
         <div>
             <label> Quantity: </label>
             <select>
@@ -94,13 +105,32 @@
                 <option>5</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <button onclick = "addToCart(item5)">Add to Cart</button>
+    </div>
+<!-- 6th item -->    
+    <div class="card" id="item6">
+        <img src="img/menu.item6.jpeg" class="photo" alt="menu-item">
+        <div class="title">item 6<p>$3.99</p></div>
+
+        <div>
+            <label> Quantity: </label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <button onclick = "addToCart(item6)">Add to Cart</button>
     </div>
 </div>
+
 <!--Cart-->
 <div class="cart" id="cart">
     <div class="title">CART</div><hr/>
     <div id="title"></div>
+    <div class="cart-math">
 </div>
 
 </body>
