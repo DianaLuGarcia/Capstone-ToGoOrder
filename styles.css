@@ -39,12 +39,13 @@ body {
   }
 
 .background {
-
+    border: 2px solid black;
+    padding: 1024px;
     background: url(img/background.jpeg);
     background-repeat: no-repeat;
     z-index: 1;
     min-height: 100%;
-    min-width:100%;
+    min-width:auto
 }
   .crumb {
     margin-right: 2em;
