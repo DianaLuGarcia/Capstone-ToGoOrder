@@ -3,7 +3,7 @@
 <head>
     <link
     rel="stylesheet" href="styles.css" />
-    <script type=""text/javascript" src="addToCart.js"></script>
+    <script type=""text/javascript" src="addToCart.js" defer></script>
 <title>Order</title>
 </head>
 <body>
@@ -25,101 +25,100 @@
 <!-- menu items -->
 <div class="section-center">
 <!-- 1st item -->
-     <div class="card" id="item1">
+     <div class="card" id="item1" name="10.99">
         <img src="img/menu.item1.jpeg" class="photo" alt="menu-item">
-        <div class="title">item 1</div>
-        <div class="price">$10.99</div>
+        <div class="title">item 1<p>$10.99</p></div>
         <div>
-            <label> Quantity: </label>
+            <label> Special Instructions: </label>
             <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option></option>
+                <option>No Onions</option>
+                <option>No Tomato</option>
+                <option>No Pickles</option>
+                <option>Lettuce Wrap</option>
+                <option>Sauce on Side</option>
             </select>
         </div>
         <button onclick = "addToCart(item1)">Add to Cart</button>
     </div>
+
 <!-- 2nd item -->
-    <div class="card" id="item2">
+    <div class="card" id="item2" name="7.99">
         <img src="img/menu.item2.jpeg" class="photo" alt="menu-item">
-        <div class="title">item 2</div>
-        <div class="price">$7.99</div>
+        <div class="title">item 2<p>$7.99</p></div>
         <div>
-            <label> Quantity: </label>
+            <label> Special Instructions: </label>
             <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option></option>
+                <option>No Onions</option>
+                <option>No Tomato</option>
+                <option>No Pickles</option>
+                <option>Lettuce Wrap</option>
+                <option>Sauce on Side</option>
             </select>
         </div>
         <button onclick = "addToCart(item2)">Add to Cart</button>
     </div>
+
 <!-- 3rd item -->    
-    <div class="card" id="item3">
+    <div class="card" id="item3" name="5.99">
         <img src="img/menu.item3.jpeg" class="photo" alt="menu-item">
-        <div class="title">item 3</div>
-        <div class="price">$5.99</div>
+        <div class="title">item 3<p>$5.99</p></div>
         <div>
-            <label> Quantity: </label>
-            <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
+        <label> Sauce: </label>
+        <select>
+            <option></option>
+            <option>Fry Sauce</option>
+            <option>Ketchup</option>
+        </select>
+    </div>
         <button onclick = "addToCart(item3)">Add to Cart</button>
     </div>
+
 <!-- 4th item -->    
-    <div class="card" id="item4">
+    <div class="card" id="item4" name="10.99">
         <img src="img/menu.item4.jpeg" class="photo" alt="menu-item">
         <div class="title">item 4<p>$10.99</p></div>
         <div>
-            <label> Quantity: </label>
+            <label> Special Instructions: </label>
             <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option></option>
+                <option>No Onions</option>
+                <option>No Tomato</option>
+                <option>No Pickles</option>
+                <option>Lettuce Wrap</option>
+                <option>Sauce on Side</option>
             </select>
         </div>
         <button onclick = "addToCart(item4)">Add to Cart</button>
     </div>
+
 <!-- 5th item -->    
-    <div class="card" id="item5">
+    <div class="card" id="item5" name="6.99">
         <img src="img/menu.item5.jpeg" class="photo" alt="menu-item">
         <div class="title">item 5<p>$6.99</p></div>
         <div>
-            <label> Quantity: </label>
+            <label> Special Instructions: </label>
             <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option></option>
+                <option>Extra Tomato</option>
+                <option>Extra Mayo</option>
             </select>
         </div>
         <button onclick = "addToCart(item5)">Add to Cart</button>
     </div>
+
 <!-- 6th item -->    
-    <div class="card" id="item6">
+    <div class="card" id="item6" name="3.99">
         <img src="img/menu.item6.jpeg" class="photo" alt="menu-item">
         <div class="title">item 6<p>$3.99</p></div>
 
         <div>
-            <label> Quantity: </label>
+            <label> Special Instructions </label>
             <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+
+                <option>N/A</option>
+
             </select>
         </div>
         <button onclick = "addToCart(item6)">Add to Cart</button>
@@ -130,7 +129,9 @@
 <div class="cart" id="cart">
     <div class="title">CART</div><hr/>
     <div id="title"></div>
-    <div class="cart-math">
+    <div class="cart-math"></div>
+    <button>Checkout</button>
+    <br><br>
 </div>
 
 </body>
