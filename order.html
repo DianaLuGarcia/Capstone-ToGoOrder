@@ -4,27 +4,26 @@
     <link
     rel="stylesheet" href="styles.css" />
     <script type=""text/javascript" src="addToCart.js" defer></script>
-<title>To Go Menu</title>
+<title>Minnies To Go Menu</title>
 </head>
 <body>
-<!--Nav Bar-->    
-    <nav>
-        <ol>
-        <li class="crumb"><a href="./home.html">Home</a></li>
-        <li class="crumb"><a href="./order.html">Order</a></li>
-        <li class="crumb"><a href="./cart.html">Cart</a></li>
-        </ol>
-    </div>
+<!------------------------Nav Bar-------------------------------->    
+<div class="topnav">
+    <a class="active" href="./order.html">To Go Menu</a>
+    <a href="./home.html">Home</a>
+    <a href="./cart.html">Checkout</a>
+  </div>
+
     </nav>
-<!-- title -->
+<!---------------------- title -------------------------------------->
 <div class="title">
   <h2>Our To Go Menu</h2>
   <div class="underline"></div>
 </div>
 
-<!-- menu items -->
+<!-- -------------------menu items ----------------------------------->
 <div class="section-center">
-<!-- 1st item -->
+<!--------------------- 1st item ------------------------------------->
      <div class="card" id="item1" name="10.99">
         <img src="img/menu.item1.jpeg" class="photo" alt="menu-item">
         <div class="title">item 1<p>$10.99</p></div>
@@ -39,10 +38,10 @@
                 <option>Sauce on Side</option>
             </select>
         </div>
-        <button onclick = "addToCart(item1)">Add to Cart</button>
+        <button onclick = "addToCart(item1)">Add to Order</button>
     </div>
 
-<!-- 2nd item -->
+<!--------------------- 2nd item--------------------------------------- -->
     <div class="card" id="item2" name="7.99">
         <img src="img/menu.item2.jpeg" class="photo" alt="menu-item">
         <div class="title">item 2<p>$7.99</p></div>
@@ -57,10 +56,10 @@
                 <option>Sauce on Side</option>
             </select>
         </div>
-        <button onclick = "addToCart(item2)">Add to Cart</button>
+        <button onclick = "addToCart(item2)">Add to Order</button>
     </div>
 
-<!-- 3rd item -->    
+<!------------------------ 3rd item ----------------------------------------->    
     <div class="card" id="item3" name="5.99">
         <img src="img/menu.item3.jpeg" class="photo" alt="menu-item">
         <div class="title">item 3<p>$5.99</p></div>
@@ -72,10 +71,10 @@
             <option>Ketchup</option>
         </select>
     </div>
-        <button onclick = "addToCart(item3)">Add to Cart</button>
+        <button onclick = "addToCart(item3)">Add to Order</button>
     </div>
 
-<!-- 4th item -->    
+<!-- ----------------------4th item ------------------------------------------->    
     <div class="card" id="item4" name="10.99">
         <img src="img/menu.item4.jpeg" class="photo" alt="menu-item">
         <div class="title">item 4<p>$10.99</p></div>
@@ -90,10 +89,10 @@
                 <option>Sauce on Side</option>
             </select>
         </div>
-        <button onclick = "addToCart(item4)">Add to Cart</button>
+        <button onclick = "addToCart(item4)">Add to Order</button>
     </div>
 
-<!-- 5th item -->    
+<!-------------------------- 5th item ------------------------------------------->    
     <div class="card" id="item5" name="6.99">
         <img src="img/menu.item5.jpeg" class="photo" alt="menu-item">
         <div class="title">item 5<p>$6.99</p></div>
@@ -105,10 +104,10 @@
                 <option>Extra Mayo</option>
             </select>
         </div>
-        <button onclick = "addToCart(item5)">Add to Cart</button>
+        <button onclick = "addToCart(item5)">Add to Order</button>
     </div>
 
-<!-- 6th item -->    
+<!---------------------------- 6th item ----------------------------------------->    
     <div class="card" id="item6" name="3.99">
         <img src="img/menu.item6.jpeg" class="photo" alt="menu-item">
         <div class="title">item 6<p>$3.99</p></div>
@@ -121,16 +120,16 @@
 
             </select>
         </div>
-        <button onclick = "addToCart(item6)">Add to Cart</button>
+        <button onclick = "addToCart(item6)">Add to Order</button>
     </div>
 </div>
 
-<!--Cart-->
+<!-----------------------------Cart--------------------------------------------------->
 <div class="cart" id="cart">
     <div class="title">CART</div><hr/>
     <div id="title"></div>
     <div class="cart-math"></div>
-<!--Cart Checkout button redirects to checkout page-->
+<!-----------Cart Checkout button redirects to checkout page--------------------------->
     <button id="checkout" class="float-left submit-button" >Checkout</button>
     <script type="text/javascript">
         document.getElementById("checkout").onclick = function () {
